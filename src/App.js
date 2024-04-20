@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import Titlesplash from './components/titlesplash';
+import Card from './components/card';
+import Profileimage from './components/profileimage';
 
 function App() {
+
+  const containerStyle = {
+    display: 'flex', // This enables flexbox
+    alignItems: 'center', // This centers them vertically
+    justifyContent: 'space-between', // This adds space between the child components
+  };
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className ="containerStyle">
+      <Titlesplash/>
+      <Card/>
+      <Profileimage/>
     </div>
   );
 }
+
+
 
 export default App;

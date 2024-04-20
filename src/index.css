@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,23 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.card { 
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 10px; 
+  box-shadow: 5px 5px 5px hsl(0, 0%, 0%, 0.1);
+  padding: 20px; 
+  margin: 10px; 
+  text-align: center; 
+  max-width: 250px;
+  display: inline-block;
+}
+
+.card .card-image{ 
+  max-width: 60%;
+  height: auto;
+  border-radius:50%;
+  margin-bottom: 10px; 
+
 }
