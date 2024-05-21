@@ -1,5 +1,4 @@
 import './App.css';
-import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Titlesplash from './components/titlesplash';
 import Card from './components/card';
 import Profileimage from './components/profileimage';
@@ -62,29 +61,6 @@ const filteredCards = cards.filter(card => {
   };
 
 
-  /*
-
-  What I need to do: 
-
-  Dynamically create blog pages 
-  Dynamically create project pages
-  ----> Need a page component that can be dynamically rendered with JSON (call the JSON file WRITING)
-
-  WRITING needs to be structured so that it has an id that can be passed in to the router
-
-
-  */
-  const Example = () => <h2>Example Page</h2>;
-  const FirstProject = () => <h2>First Project Page</h2>;
-  
-<Router> 
-  <Routes>
-    <Route path="/" element={<App />} />
-    <Route path="/blog" element= {<App />} />
-    <Route path="/example" component={Example} />
-    <Route path="/first-project" component={FirstProject} />
-  </Routes>
-</Router>
 
 
 export default App;

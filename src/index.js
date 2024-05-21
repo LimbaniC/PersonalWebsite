@@ -4,11 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
-
-const Example = () => <h2>Example Page</h2>;
-const FirstProject = () => <h2>First Project Page</h2>;
-
+import Example from './components/example';
+import Firstproject from './components/firstproject';
 
 
 
@@ -18,8 +15,8 @@ root.render(
   <Routes>
     <Route path="/" element={<App />} />
     <Route path="/blog" element= {<App />} />
-    <Route path="/example" component={Example} />
-    <Route path="/first-project" component={FirstProject} />
+    <Route path="/example" element={<Example/>} />
+    <Route path="/first-project" element={<Firstproject/>} />
   </Routes>
 </Router>
 
