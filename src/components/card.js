@@ -7,9 +7,9 @@ const card = ({image, title, description, link}) => {
     <div className="card">
         <Link to={link}>
           <img className="card-image" alt="profile picture" src ={image}></img>
-        </Link>
         <h2>{title}</h2>
         <p>{description}</p>
+        </Link>
     </div>
 
   )
