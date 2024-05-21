@@ -1,0 +1,8 @@
+{ 
+    "id":"exampleblog1", 
+    "title": "My first blog",
+    "main_body" : [{
+        "bp1": "This is my first blog. I hope you like it.",
+        "bp2": "This is the second paragraph of my first blog. I hope you like it."
+    }]
+}

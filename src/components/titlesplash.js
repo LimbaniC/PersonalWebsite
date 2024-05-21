@@ -2,29 +2,6 @@ import {motion} from 'framer-motion';
 import { SocialIcon } from 'react-social-icons';
 
 
-function switchCards() {
-    function Titlesplash() {
-        alert("Titlesplash");
-    }
-
-    function Projects() {
-        alert("Projects");
-    }
-
-    function Contacts() {
-        alert("Contacts");
-    }
-
-    return (
-        <div>
-            <button onClick={Titlesplash}>Blog</button>
-            <button onClick={Projects}>Projects</button>
-            <button onClick={Contacts}>Projects</button>
-
-        </div>
-    );
-
-}
 
 function socialMediaLinks() { 
     return (
@@ -53,8 +30,6 @@ function Titlesplash() {
             {/* <h1 className="text-3xl font-bold">Welcome! My name is Limbani!</h1> */}
 
             {socialMediaLinks()}
-            {switchCards()}
-
         </div>
     );
 }
