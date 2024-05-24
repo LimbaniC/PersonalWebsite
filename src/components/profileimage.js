@@ -1,5 +1,6 @@
 import React from 'react';
 import pfp from '../assets/pfp.png';
+import './pfpstyle.css';
 
 function profileimage() {
     function tapImage() {
@@ -8,14 +9,11 @@ function profileimage() {
     
 
   return (
-    <div>
+    <div >
         <button onClick={tapImage}></button>
-
         <a href="https://github.com/LimbaniC">
-        <img src={pfp} alt="Profile" />
+        <img className="pfpstyling" src={pfp} alt="Profile" />
         </a> 
-
-
     </div>
   );
 }

@@ -1,0 +1,12 @@
+.pfpstyling { 
+    display: flex;
+    margin-left: auto;
+    padding-right: 25px;
+    padding-top:170px;
+    width:20%;
+    float:right;
+
+    display: flex;
+    justify-content: center;
+    align-items:end;
+}

@@ -3,10 +3,12 @@ import Titlesplash from './components/titlesplash';
 import Card from './components/card';
 import Profileimage from './components/profileimage';
 import { useState, useEffect } from 'react';
+import './components/blogstyle.css';
+import './components/cardstyle.css';
 
 function App() {
-  const [showProjects, setShowProjects] = useState(false);
-  const [showBlog, setShowBlog] = useState(false);
+  const [showProjects, setShowProjects] = useState(true);
+  const [showBlog, setShowBlog] = useState(true);
   const [filteredCards, setFilteredCards] = useState([]);
 
   const cards = [
@@ -24,22 +26,25 @@ function App() {
       link: "/first-project",
       tag: "project"
     }
+    
   ];
 
   useEffect(() => {
     setFilteredCards(cards.filter(card => {
-      return (card.tag === 'project' && showProjects) || (card.tag === 'blog' && showBlog) || (!showProjects && !showBlog);
+      return (card.tag === 'project' || showProjects) ^ (card.tag === 'blog' || showBlog) || (!showProjects && !showBlog);
     }));
   }, [showProjects, showBlog]);
 
   return (
     <div>
-      <button onClick={() => setShowBlog(prev => !prev)}>Blog</button>
-      <button onClick={() => setShowProjects(prev => !prev)}>Projects</button>
+      <div className="myblogstyle">
+      <button onClick={() => setShowBlog(prev => !prev)}>Show Blog</button>
+      <button onClick={() => setShowProjects(prev => !prev)}>Show Projects</button>
+      </div>
 
-      <div className="containerStyle">
+      <div>
         <Titlesplash />
-
+        <div className="allcards">
         {filteredCards.map((card, index) => (
           <Card
             key={index}
@@ -49,17 +54,13 @@ function App() {
             link={card.link}
           />
         ))}
-
+        </div>
         <Profileimage />
       </div>
     </div>
   );
 }
 
-const containerStyle = {
-  display: 'flex', // This enables flexbox
-  alignItems: 'center', // This centers them vertically
-  justifyContent: 'space-between', // This adds space between the child components
-};
+
 
 export default App;
