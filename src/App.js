@@ -25,7 +25,63 @@ function App() {
       description: "My first project was this portfolio website - this is what I learned from it",
       link: "/first-project",
       tag: "project"
-    }
+    },
+    {
+      imageSrc: "path/to/image2.jpg",
+      title: "First project",
+      description: "My first project was this portfolio website - this is what I learned from it",
+      link: "/first-project",
+      tag: "project"
+    },
+    {
+      imageSrc: "path/to/image2.jpg",
+      title: "First project",
+      description: "My first project was this portfolio website - this is what I learned from it",
+      link: "/first-project",
+      tag: "project"
+    },
+    {
+      imageSrc: "path/to/image2.jpg",
+      title: "First project",
+      description: "My first project was this portfolio website - this is what I learned from it",
+      link: "/first-project",
+      tag: "project"
+    },
+    {
+      imageSrc: "path/to/image2.jpg",
+      title: "First project",
+      description: "My first project was this portfolio website - this is what I learned from it",
+      link: "/first-project",
+      tag: "project"
+    },
+    {
+      imageSrc: "path/to/image2.jpg",
+      title: "First project",
+      description: "My first project was this portfolio website - this is what I learned from it",
+      link: "/first-project",
+      tag: "project"
+    },
+    {
+      imageSrc: "path/to/image2.jpg",
+      title: "First project",
+      description: "My first project was this portfolio website - this is what I learned from it",
+      link: "/first-project",
+      tag: "project"
+    },
+    {
+      imageSrc: "path/to/image2.jpg",
+      title: "First project",
+      description: "My first project was this portfolio website - this is what I learned from it",
+      link: "/first-project",
+      tag: "project"
+    },
+    {
+      imageSrc: "path/to/image2.jpg",
+      title: "First project",
+      description: "My first project was this portfolio website - this is what I learned from it",
+      link: "/first-project",
+      tag: "project"
+    },
     
   ];
 

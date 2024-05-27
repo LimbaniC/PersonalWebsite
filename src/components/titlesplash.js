@@ -23,7 +23,7 @@ function Titlesplash() {
         animate={{ opacity: 1, y: 0 }}  // Animate to fully visible and in the original position
         transition={{ duration: 0.75 }}  // The animation should take 0.5 seconds
 
-    className="text-5xl font-bold">
+    className="text-4xl font-bold">
 
         Welcome! My name is Limbani! 
     </motion.h1>

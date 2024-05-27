@@ -5,3 +5,13 @@
     float:left;
 
 }
+
+.titlestyle { 
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #333;
+}
