@@ -1,7 +1,7 @@
 import React from 'react'
 import pfp from '../assets/pfp.png';
 import { Link } from 'react-router-dom';
-import './cardstyle.css';
+import './styling.css';
 
 const card = ({image, title, description, link}) => {
   return (

@@ -2,14 +2,29 @@ import './App.css';
 import Titlesplash from './components/titlesplash';
 import Card from './components/card';
 import Profileimage from './components/profileimage';
-import { useState, useEffect } from 'react';
-import './components/blogstyle.css';
-import './components/cardstyle.css';
+import { useState, useEffect, useRef } from 'react';
+import pfp from './assets/pfp.png'
+import './components/styling.css';
+import ScrollToTop from './components/ScrollToTop'
+import Contact from './components/Contact';
 
 function App() {
   const [showProjects, setShowProjects] = useState(true);
   const [showBlog, setShowBlog] = useState(true);
   const [filteredCards, setFilteredCards] = useState([]);
+
+  const me = useRef(null);
+  const blog = useRef(null);
+  const project = useRef(null);
+  const contact = useRef(null);
+
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
+
 
   const cards = [
     {
@@ -92,15 +107,28 @@ function App() {
   }, [showProjects, showBlog]);
 
   return (
-    <div>
+    <div className="App">
+      <ScrollToTop/>
       <div className="myblogstyle">
-      <button onClick={() => setShowBlog(prev => !prev)}>Show Blog</button>
+     {/*} <button onClick={() => setShowBlog(prev => !prev)}>Show Blog</button>
       <button onClick={() => setShowProjects(prev => !prev)}>Show Projects</button>
+      {/*<button className="btn">DaisyUI example</button>*/}
       </div>
 
-      <div>
-        <Titlesplash />
-        <div className="allcards">
+      <div ref={me} className="herosection">
+        <ul>
+          {/*<li onClick={() => scrollToSection(me)} className="navstyle">me</li>*/}
+          <li onClick={() => scrollToSection(blog)} className="navstyle">blog</li>
+          <li onClick={() => scrollToSection(project)} className="navstyle">project</li>
+          <li onClick={() => scrollToSection(contact)} className="navstyle">contact</li>
+        </ul>
+        <Titlesplash/>
+      </div>
+
+      <div ref={blog} className="blogsection">
+        <h2 className="navstyle">Blog</h2>
+
+      <div className="allcards">
         {filteredCards.map((card, index) => (
           <Card
             key={index}
@@ -111,8 +139,21 @@ function App() {
           />
         ))}
         </div>
-        <Profileimage />
+
       </div>
+      <div ref={project} className="projectsection">
+        <h2 className="navstyle">Projects</h2>
+
+
+
+      </div>
+      <div ref={contact} className="contactmesection">
+        <h2 className="navstyle">Contact me</h2>
+        <Contact/>
+
+
+      </div>
+
     </div>
   );
 }

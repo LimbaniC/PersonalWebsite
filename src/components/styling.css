@@ -1,0 +1,124 @@
+.App { 
+    text-align:center;
+}
+
+.navstyle { 
+    text-decoration: none;
+    display: inline;
+    padding: 20px 20px;
+    font-weight: 700;
+    font-size: large;
+    cursor: pointer;
+  }
+
+
+.myblogstyle{ 
+    
+    padding: 10px 20px; 
+    font-size: 16px; 
+    color: #333;
+    background-color: #ccc; 
+    border: 1px solid #999; 
+    border-radius: 4px; 
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s; 
+    display: inline-block;
+    
+
+}
+
+.card { 
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 20px; 
+    box-shadow: 5px 5px 5px hsl(0, 0%, 0%, 0.1);
+    padding: 20px; 
+    margin: 10px; 
+    max-width: 500px;
+    max-height: 500px;
+    width:24%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .card .card-image{ 
+    max-width: 60%;
+    height: auto;
+    border-radius:50%;
+    margin-bottom: 10px; 
+  
+  }
+
+  .allcards{ 
+
+    position: fixed;
+      top: 100px; 
+      left: 350px;
+
+    display:flex;
+    flex-wrap:wrap;
+    align-items: flex-start;
+  }
+
+  .herosection{ 
+    height: 1600px;
+  }
+
+  .blogsection{ 
+    height: 600px;
+  }
+
+  .projectsection{ 
+    height: 600px;
+  }
+
+  .contactmesection {
+    height: 600px;
+  }
+
+.top-btn-position{ 
+  position: fixed; 
+  bottom: 15px; 
+  right: 20px;
+}
+
+
+.top-btn-style {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
+.--text-center {
+  text-align: center;
+}
+
+.--form-control {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.--btn {
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 6px 8px;
+  margin: 0 5px 0 0;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+
+.--btn-primary {
+  color: #fff;
+  background: #007bff;
+}
